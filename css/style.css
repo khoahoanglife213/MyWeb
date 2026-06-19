@@ -26,20 +26,27 @@ a {
 .brand {
   font-weight: 800;
   font-size: 24px;
-  color: #15803d;
 }
 .main-nav a {
   margin-right: 16px;
   text-decoration: none;
   font-weight: 700;
-  color: #1f2937;
 }
-.main-nav a:hover {
-  color: #15803d;
+#main-title {
+  color: #ffffff;
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+/* Chặng 3: màu sắc, nền và phong cách nhận diện */
+:root {
+  --primary: #15803d;
+  --accent: #f97316;
+  --soft: #dcfce7;
+  --dark: #111827;
 }
 .hero {
-  text-align: center;
-  padding: 80px 24px;
+  padding: 80px 8%;
+  color: white;
   background-image: url('../img/anhbiabongda.png');
   background-size: cover;
   background-position: center;
@@ -49,7 +56,7 @@ a {
   content: '';
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.55);
 }
 .hero > * {
   position: relative;
@@ -61,28 +68,20 @@ a {
   letter-spacing: 2px;
   margin-bottom: 12px;
 }
-#main-title {
-  color: #ffffff;
-  font-size: 40px;
-  margin-bottom: 16px;
-}
 .intro {
   color: #d1fae5;
   max-width: 560px;
-  margin: 0 auto 28px;
   line-height: 1.7;
+  margin-bottom: 28px;
 }
 .primary-button {
   display: inline-block;
-  padding: 12px 28px;
-  background-color: #15803d;
-  color: white;
+  padding: 12px 24px;
+  background-color: var(--accent);
+  color: #fff;
+  border-radius: 999px;
   text-decoration: none;
-  border-radius: 6px;
   font-weight: 700;
-}
-.primary-button:hover {
-  background-color: #166534;
 }
 .about-section {
   max-width: 720px;
@@ -91,7 +90,7 @@ a {
 }
 .about-section h2 {
   font-size: 28px;
-  color: #15803d;
+  color: var(--primary);
   margin-bottom: 16px;
 }
 .about-section p {
@@ -103,6 +102,25 @@ a {
   padding-left: 20px;
   line-height: 2;
 }
-.topic-list li {
-  color: #374151;
+.style-guide {
+  padding: 40px 8%;
+  background-color: var(--soft);
 }
+.style-guide h2 {
+  font-size: 22px;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+.swatches {
+  display: flex;
+  gap: 12px;
+}
+.swatch {
+  padding: 18px 24px;
+  border-radius: 16px;
+  color: white;
+  font-weight: 700;
+}
+.swatch-primary { background-color: var(--primary); }
+.swatch-accent { background-color: var(--accent); }
+.swatch-soft { color: var(--dark); background-color: #ffffff; border: 1px solid #d1fae5; }
