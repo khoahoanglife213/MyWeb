@@ -47,18 +47,9 @@ a {
 .hero {
   padding: 80px 8%;
   color: white;
-  background-image: url('../img/anhbiabongda.png');
+  background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('../img/anhbiabongda.png');
   background-size: cover;
   background-position: center;
-  position: relative;
-}
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.55);
-}
-.hero > * {
   position: relative;
 }
 .eyebrow {
