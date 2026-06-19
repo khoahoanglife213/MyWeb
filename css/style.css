@@ -14,6 +14,7 @@ h1, h2, h3, p {
 a {
   color: #2563eb;
 }
+
 /* Chặng 2: class, id, selector kết hợp và cascade */
 .site-header {
   padding: 18px 8%;
@@ -26,17 +27,18 @@ a {
 .brand {
   font-weight: 800;
   font-size: 24px;
+  color: #15803d;
 }
 .main-nav a {
   margin-right: 16px;
   text-decoration: none;
   font-weight: 700;
+  color: #1f2937;
 }
 #main-title {
   color: #ffffff;
-  font-size: 40px;
-  margin-bottom: 16px;
 }
+
 /* Chặng 3: màu sắc, nền và phong cách nhận diện */
 :root {
   --primary: #15803d;
@@ -50,7 +52,6 @@ a {
   background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('../img/anhbiabongda.png');
   background-size: cover;
   background-position: center;
-  position: relative;
 }
 .eyebrow {
   font-size: 13px;
@@ -62,7 +63,6 @@ a {
 .intro {
   color: #d1fae5;
   max-width: 560px;
-  line-height: 1.7;
   margin-bottom: 28px;
 }
 .primary-button {
@@ -74,37 +74,10 @@ a {
   text-decoration: none;
   font-weight: 700;
 }
-.about-section {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 60px 24px;
-}
-.about-section h2 {
-  font-size: 28px;
-  color: var(--primary);
-  margin-bottom: 16px;
-}
-.about-section p {
-  line-height: 1.7;
-  margin-bottom: 12px;
-}
-.topic-list {
-  margin-top: 20px;
-  padding-left: 20px;
-  line-height: 2;
-}
-.style-guide {
-  padding: 40px 8%;
-  background-color: var(--soft);
-}
-.style-guide h2 {
-  font-size: 22px;
-  color: var(--primary);
-  margin-bottom: 20px;
-}
 .swatches {
   display: flex;
   gap: 12px;
+  justify-content: center;
 }
 .swatch {
   padding: 18px 24px;
@@ -114,4 +87,46 @@ a {
 }
 .swatch-primary { background-color: var(--primary); }
 .swatch-accent { background-color: var(--accent); }
-.swatch-soft { color: var(--dark); background-color: #ffffff; border: 1px solid #d1fae5; }
+.swatch-soft { color: var(--dark); background-color: var(--soft); }
+
+/* Chặng 4: typography, căn chỉnh, line-height */
+.section {
+  padding: 56px 8%;
+}
+h1 {
+  font-size: clamp(36px, 6vw, 72px);
+  line-height: 1.05;
+}
+h2 {
+  font-size: 32px;
+  color: var(--dark);
+  text-align: center;
+  margin-bottom: 24px;
+}
+p, li {
+  font-size: 18px;
+  line-height: 1.7;
+}
+.lead {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 24px;
+}
+blockquote {
+  font-size: 24px;
+  font-style: italic;
+  text-align: center;
+  color: var(--primary);
+  border-left: 4px solid var(--primary);
+  padding: 16px 32px;
+  margin: 0 auto;
+  max-width: 600px;
+}
+.topic-list {
+  padding-left: 20px;
+  margin-top: 16px;
+}
+.story-section {
+  background-color: var(--soft);
+}
