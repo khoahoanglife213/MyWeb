@@ -83,3 +83,12 @@ input, textarea { width: 100%; padding: 13px 14px; border: 1px solid #cbd5e1; bo
   display: none;
 }
 
+/* bài 06 */
+.dark-mode {
+  background: #111827;
+  color: #f8fafc;
+}
+
+.warm-mode {
+  background: #fff7ed;
+}
