@@ -73,28 +73,12 @@ input, textarea { width: 100%; padding: 13px 14px; border: 1px solid #cbd5e1; bo
   .portfolio-grid { grid-template-columns: 1fr; }
   .hero, .section { padding: 42px 6%; }
   .bq-card { padding: 1.5rem; }
+  .menu-toggle { display: block; }
+  .main-nav { display: none; }
+  .main-nav.active { display: flex; flex-direction: column; }
 }
 
 .hidden {
   display: none;
 }
 
-/* bài 05-thêm menu */
-.menu-toggle {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .main-nav {
-    display: none;
-  }
-
-  .main-nav.active {
-    display: flex;
-    flex-direction: column;
-  }
-}
