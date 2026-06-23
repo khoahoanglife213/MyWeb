@@ -18,3 +18,13 @@ if (mainTitle && welcomeText) {
   mainTitle.textContent = "Bảng tin bóng đá";
   welcomeText.textContent = "Chào mừng bạn đã đến với thế giới bóng đá.";
 }
+
+//bài 03
+const helloBtn = document.getElementById("helloBtn");
+const helloResult = document.getElementById("helloResult");
+
+if (helloBtn && helloResult) {
+  helloBtn.addEventListener("click", function () {
+    helloResult.textContent = "Cảm ơn bạn đã ghé thăm MyWeb!";
+  });
+}
