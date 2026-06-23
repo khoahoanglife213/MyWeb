@@ -11,7 +11,7 @@ console.log("Đã sẵn sàng dùng JS?", isReady);
 console.log("Kiểu dữ liệu topic:", typeof topic);
 
 //bài 02
-const mainTitle = document.getElementById("mainTitle");
+const mainTitle = document.getElementById("main-Title");
 const welcomeText = document.getElementById("welcomeText");
 
 if (mainTitle && welcomeText) {
