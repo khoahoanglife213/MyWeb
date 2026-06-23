@@ -94,14 +94,35 @@
 
   <section class="section gallery-section" id="gallery">
     <h2>Thư viện ảnh</h2>
+    <div style="text-align:center; margin-bottom:24px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+    <button class="filter-btn" data-filter="all">Tất cả</button>
+    <button class="filter-btn" data-filter="san">Sân bóng</button>
+    <button class="filter-btn" data-filter="cauthu">Cầu thủ</button>
+    <button class="filter-btn" data-filter="trandau">Trận đấu</button>
+  </div>
     <div class="image-strip">
-      <figure><img src="../img/anhbiabongda.png" alt="Ảnh bìa sân bóng đá"><figcaption>Sân bóng đá</figcaption></figure>
-      <figure><img src="../img/cauthubongda.png" alt="Cầu thủ thi đấu"><figcaption>Cầu thủ thi đấu</figcaption></figure>
-      <figure><img src="../img/anhtrandaubongda.png" alt="Ảnh trận đấu"><figcaption>Trận đấu</figcaption></figure>
-      <figure><img src="../img/anhcupdabong.png" alt="Ảnh cúp bóng đá"><figcaption>Cúp bóng đá</figcaption></figure>
-      <figure><img src="../img/anhsanbongda.png" alt="Ảnh sân vận động"><figcaption>Sân vận động</figcaption></figure>
-    </div>
-  </section>
+    <figure class="gallery-item" data-category="san">
+      <img src="../img/anhbiabongda.png" alt="Ảnh bìa sân bóng đá">
+      <figcaption>Sân bóng đá</figcaption>
+    </figure>
+    <figure class="gallery-item" data-category="cauthu">
+      <img src="../img/cauthubongda.png" alt="Cầu thủ thi đấu">
+      <figcaption>Cầu thủ thi đấu</figcaption>
+    </figure>
+    <figure class="gallery-item" data-category="trandau">
+      <img src="../img/anhtrandaubongda.png" alt="Ảnh trận đấu">
+      <figcaption>Trận đấu</figcaption>
+    </figure>
+    <figure class="gallery-item" data-category="trandau">
+      <img src="../img/anhcupdabong.png" alt="Ảnh cúp bóng đá">
+      <figcaption>Cúp bóng đá</figcaption>
+    </figure>
+    <figure class="gallery-item" data-category="san">
+      <img src="../img/anhsanbongda.png" alt="Ảnh sân vận động">
+      <figcaption>Sân vận động</figcaption>
+    </figure>
+  </div>
+</section>
 
   <section class="section layout-section" id="layout">
     <h2>Bố cục hai vùng bằng Flexbox</h2>
