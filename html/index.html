@@ -151,16 +151,22 @@
   </section>
 
   <section class="section contact-section" id="contact">
-    <h2>Liên hệ</h2>
-    <form class="contact-form" action="#" method="post">
-      <label for="fullName">Họ tên</label>
-      <input id="fullName" name="fullName" type="text" placeholder="Nhập họ tên">
-      <label for="message">Thông điệp</label>
-      <textarea id="message" name="message" rows="4" placeholder="Nội dung liên hệ"></textarea>
-      <button type="submit">Gửi thông tin</button>
-    </form>
-  </section>
-</main>
+  <h2>Liên hệ</h2>
+  <form class="contact-form" id="contactForm" action="#" method="post">
+    <label for="fullName">Họ tên</label>
+    <input id="fullName" name="fullName" type="text" placeholder="Nhập họ tên">
+
+    <label for="email">Email</label>
+    <input id="email" name="email" type="text" placeholder="Nhập email">
+
+    <label for="message">Thông điệp</label>
+    <textarea id="message" name="message" rows="4" placeholder="Nội dung liên hệ"></textarea>
+
+    <p id="formMessage"></p>
+
+    <button type="submit">Gửi thông tin</button>
+  </form>
+</section>
 
 <footer class="site-footer">
   <p>© Bóng đá 24/7 mang lại các tin tức nóng!</p>
